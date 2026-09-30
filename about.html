@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О проекте — Музеи Перми</title>
+  <meta name="description" content="О цифровом проекте «Музеи Перми»: цель, разделы сайта, использованные технологии и источники информации.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 10 12 4l9 6"/>
+          <path d="M5 10v9M9 10v9M15 10v9M19 10v9"/>
+          <path d="M3 21h18"/>
+        </svg>
+      </span>
+      <span class="logo-text">Музеи Перми</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Главная</a>
+      <a href="museums.html">Каталог</a>
+      <a href="index.html#route">Маршрут</a>
+      <a href="about.html" class="active">О проекте</a>
+      <a href="quiz.html" class="btn btn-primary btn-nav">Викторина</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="section-tight">
+  <div class="container">
+    <div class="page-head">
+      <h1>О <span class="gradient-text">проекте</span></h1>
+      <p>Цифровой гид по музеям города Перми, созданный как учебный проект о культурном наследии Прикамья.</p>
+    </div>
+
+    <div class="prose">
+      <div class="stat-row">
+        <div class="stat-block">
+          <span class="n" id="aboutMuseumsCount">0</span>
+          <span class="l">музеев в каталоге</span>
+        </div>
+        <div class="stat-block">
+          <span class="n">6</span>
+          <span class="l">категорий музеев</span>
+        </div>
+        <div class="stat-block">
+          <span class="n">10</span>
+          <span class="l">вопросов викторины</span>
+        </div>
+      </div>
+
+      <h2>Цель проекта</h2>
+      <p>
+        Пермь — один из крупнейших культурных центров Урала. Здесь есть музеи деревянной
+        скульптуры и деревянного зодчества, палеонтологии и техники, современного искусства
+        и мультимедийной истории. Собрать информацию о них в одном удобном месте —
+        главная задача этого сайта.
+      </p>
+
+      <h2>Что можно сделать на сайте</h2>
+      <ul class="bullets">
+        <li>Открыть <a href="museums.html">каталог музеев</a> и отфильтровать их по категории или найти по названию.</li>
+        <li>Прочитать <a href="museums.html">карточку музея</a>: историю, коллекции, факты, адрес и официальный сайт.</li>
+        <li>Посмотреть примерный <a href="index.html#route">маршрут на один день</a> по музеям города.</li>
+        <li>Проверить знания в <a href="quiz.html">викторине</a> из 10 вопросов.</li>
+      </ul>
+
+      <h2>Разделы сайта</h2>
+      <ul class="bullets">
+        <li><strong>Главная</strong> — знакомство с музеями Перми, интересные факты и маршрут.</li>
+        <li><strong>Каталог</strong> — все музеи с фильтром и поиском.</li>
+        <li><strong>Карточка музея</strong> — подробное описание каждого музея.</li>
+        <li><strong>Викторина</strong> — интерактивная проверка знаний с объяснениями.</li>
+      </ul>
+
+      <h2>Технологии</h2>
+      <p>
+        Сайт сделан как статический проект: только HTML, CSS и JavaScript без сервера
+        и сторонних библиотек. Он открывается в любом современном браузере, работает
+        на телефоне и компьютере и не требует установки. Дизайн адаптивный, есть поддержка
+        режима уменьшенной анимации для тех, кому это важно.
+      </p>
+
+      <h2>Источники информации</h2>
+      <p>
+        Сведения о музеях взяты из открытых источников и официальных сайтов музеев.
+        Ссылки на официальные сайты указаны в карточках музеев и в подвале сайта.
+        Проект носит образовательный характер.
+      </p>
+
+      <div class="center-btn">
+        <a href="museums.html" class="btn btn-primary btn-lg">Перейти в каталог →</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 10 12 4l9 6"/>
+              <path d="M5 10v9M9 10v9M15 10v9M19 10v9"/>
+              <path d="M3 21h18"/>
+            </svg>
+          </span>
+          <span class="logo-text">Музеи Перми</span>
+        </a>
+        <p>Цифровой проект о музеях города Перми. Учебная работа, посвящённая культурному наследию Прикамья.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Разделы</h4>
+        <a href="index.html">Главная</a>
+        <a href="museums.html">Каталог музеев</a>
+        <a href="quiz.html">Викторина</a>
+        <a href="about.html">О проекте</a>
+      </div>
+      <div class="footer-col">
+        <h4>Официальные сайты</h4>
+        <a href="https://museumperm.ru" target="_blank" rel="noopener noreferrer">Пермский краеведческий музей</a>
+        <a href="https://permartmuseum.ru" target="_blank" rel="noopener noreferrer">Художественная галерея</a>
+        <a href="https://permm.ru" target="_blank" rel="noopener noreferrer">PERMM</a>
+        <a href="https://planetarium.perm.ru" target="_blank" rel="noopener noreferrer">Пермский планетарий</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Музеи Перми — цифровой проект о культурном наследии города</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

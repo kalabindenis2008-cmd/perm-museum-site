@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Музеи Перми — цифровой гид по музеям города</title>
+  <meta name="description" content="Цифровой гид по музеям города Перми: каталог, описания, официальные ссылки и викторина. Культурное наследие Прикамья в одном месте.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 10 12 4l9 6"/>
+          <path d="M5 10v9M9 10v9M15 10v9M19 10v9"/>
+          <path d="M3 21h18"/>
+        </svg>
+      </span>
+      <span class="logo-text">Музеи Перми</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Главная</a>
+      <a href="museums.html">Каталог</a>
+      <a href="index.html#route">Маршрут</a>
+      <a href="about.html">О проекте</a>
+      <a href="quiz.html" class="btn btn-primary btn-nav">Викторина</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="container hero-inner">
+    <span class="hero-badge">Культурное наследие Прикамья</span>
+    <h1>Музеи города<br><span class="gradient-text">Перми</span></h1>
+    <p class="hero-sub">
+      От пермской деревянной скульптуры и мамонтов до современного искусства
+      и деревянного зодчества под открытым небом. Один гид по всем музеям города —
+      с описаниями, фактами и официальными ссылками.
+    </p>
+    <div class="hero-actions">
+      <a href="museums.html" class="btn btn-primary btn-lg">Открыть каталог музеев</a>
+      <a href="#route" class="btn btn-outline btn-lg">Маршрут на день</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-count="0" id="statMuseums">0</span>
+        <span class="stat-label">музеев в каталоге</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="1890">0</span>
+        <span class="stat-label">год основания старейшего</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="500">0</span>
+        <span class="stat-label">деревянных скульптур</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="10">0</span>
+        <span class="stat-label">вопросов в викторине</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">О проекте</span>
+      <h2>Пермь — <span class="gradient-text">музейная</span> столица Урала</h2>
+      <p>Этот сайт — цифровой гид по музеям Перми. Мы собрали в одном месте информацию о главных музеях города, чтобы было проще выбрать, куда пойти.</p>
+    </div>
+    <div class="about-grid stagger-grid">
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">🏛</div>
+        <h3>Богатая история</h3>
+        <p>Пермский краеведческий музей основан в 1890 году и входит в число старейших музеев Урала.</p>
+      </article>
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">🖼</div>
+        <h3>Уникальные коллекции</h3>
+        <p>Крупнейшее в России собрание пермской деревянной скульптуры — «пермских богов».</p>
+      </article>
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">🦣</div>
+        <h3>Древняя жизнь</h3>
+        <p>Пермский геологический период назван в честь города, и об этом рассказывает целый музей.</p>
+      </article>
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">🎨</div>
+        <h3>Искусство и современность</h3>
+        <p>PERMM — главная площадка современного искусства, появившаяся в 2009 году.</p>
+      </article>
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">🪵</div>
+        <h3>Деревянное зодчество</h3>
+        <p>«Хохловка» — первый на Урале музей деревянной архитектуры под открытым небом.</p>
+      </article>
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">💥</div>
+        <h3>Техника и заводы</h3>
+        <p>Музеи Мотовилихи рассказывают о пермской артиллерии и изобретении дуговой сварки.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="section section-tight" id="featured">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Куда пойти</span>
+      <h2>Главные музеи <span class="gradient-text">Перми</span></h2>
+      <p>Шесть музеев, с которых стоит начать знакомство с городом</p>
+    </div>
+    <div class="grid grid-3 stagger-grid" id="featuredGrid"></div>
+    <noscript>
+      <p style="text-align:center;color:#6b6157">Включите JavaScript, чтобы увидеть карточки музеев, или откройте <a href="museums.html">каталог</a>.</p>
+    </noscript>
+    <div class="center-btn reveal">
+      <a href="museums.html" class="btn btn-primary">Все музеи города →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS -->
+<section class="section section-tight">
+  <div class="container">
+    <div class="facts">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Интересное</span>
+          <h2>Факты, которые <span class="gradient-text">удивляют</span></h2>
+          <p>Несколько деталей, о которых знают не все жители города</p>
+        </div>
+        <div class="facts-grid stagger-grid">
+          <div class="fact-card">
+            <span class="fact-num">500</span>
+            <p>экспонатов пермской деревянной скульптуры хранится в художественной галерее — крупнейшее собрание в России</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-num">130+</span>
+            <p>лет дому Мешкова, в котором находится главное здание Пермского краеведческого музея</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-num">314</span>
+            <p>выстрела сделали из «пермской Царь-пушки» 1868 года — в отличие от московского орудия</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-num">25×6</span>
+            <p>метров — размер полотна диорамы о событиях 1905 года в Мотовилихе</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROUTE -->
+<section class="section" id="route">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Маршрут</span>
+      <h2>Один день в <span class="gradient-text">музеях Перми</span></h2>
+      <p>Примерный план на день для тех, кто впервые в городе</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal-left">
+        <div class="timeline-dot">10</div>
+        <div class="timeline-card">
+          <span class="timeline-time">10:00</span>
+          <h3>Пермский краеведческий музей</h3>
+          <p>Начинаем с истории края в Доме Мешкова на набережной Камы.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-right">
+        <div class="timeline-dot">13</div>
+        <div class="timeline-card">
+          <span class="timeline-time">13:00</span>
+          <h3>Обед в центре</h3>
+          <p>Перерыв на обед — музеи находятся недалеко друг от друга.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-left">
+        <div class="timeline-dot">14</div>
+        <div class="timeline-card">
+          <span class="timeline-time">14:00</span>
+          <h3>Пермская художественная галерея</h3>
+          <p>Смотрим «пермских богов» и коллекцию Строгановской иконы.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-right">
+        <div class="timeline-dot">17</div>
+        <div class="timeline-card">
+          <span class="timeline-time">17:00</span>
+          <h3>PERMM или планетарий</h3>
+          <p>Завершаем день современным искусством или космическим шоу.</p>
+        </div>
+      </div>
+    </div>
+    <div class="route-note reveal">
+      <span aria-hidden="true">💡</span>
+      <p>Если есть целый день и машина — стоит съездить в «Хохловку» на берегу Камы. Это около 45 км от города.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ CTA -->
+<section class="section section-tight">
+  <div class="container">
+    <div class="cta reveal-scale">
+      <div class="container">
+        <h2>Проверьте, хорошо ли вы знаете <span class="gradient-text">музеи Перми</span></h2>
+        <p>10 вопросов о коллекциях, экспонатах и истории музеев города</p>
+        <a href="quiz.html" class="btn btn-primary btn-lg">Пройти викторину →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 10 12 4l9 6"/>
+              <path d="M5 10v9M9 10v9M15 10v9M19 10v9"/>
+              <path d="M3 21h18"/>
+            </svg>
+          </span>
+          <span class="logo-text">Музеи Перми</span>
+        </a>
+        <p>Цифровой проект о музеях города Перми. Учебная работа, посвящённая культурному наследию Прикамья.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Разделы</h4>
+        <a href="index.html">Главная</a>
+        <a href="museums.html">Каталог музеев</a>
+        <a href="quiz.html">Викторина</a>
+        <a href="about.html">О проекте</a>
+      </div>
+      <div class="footer-col">
+        <h4>Официальные сайты</h4>
+        <a href="https://museumperm.ru" target="_blank" rel="noopener noreferrer">Пермский краеведческий музей</a>
+        <a href="https://permartmuseum.ru" target="_blank" rel="noopener noreferrer">Художественная галерея</a>
+        <a href="https://permm.ru" target="_blank" rel="noopener noreferrer">PERMM</a>
+        <a href="https://planetarium.perm.ru" target="_blank" rel="noopener noreferrer">Пермский планетарий</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Музеи Перми — цифровой проект о культурном наследии города</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
